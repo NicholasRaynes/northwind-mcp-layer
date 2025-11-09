@@ -6,7 +6,7 @@ It exposes all of the Northwind business endpoints as structured MCP tools, enab
 ```text
 northwind-mcp-layer/
 ├── cmd/
-│   └── mcp/               # Application entrypoint (starts the MCP HTTP server)
+│   └── mcp/               # Application entrypoint (starts the MCP Gin HTTP server)
 ├── internal/
 │   └── mcp/               # Core MCP logic (request handling, tool routing)
 ├── go.mod / go.sum        # Go module dependencies
@@ -25,10 +25,10 @@ northwind-mcp-layer/
 Each MCP tool corresponds to a live endpoint on the `northwind-api` and is dynamically available to Github Copilot via the MCP protocol.
 
 ## Tech Stack
-Language: Go 1.23+
-Framework: Gin
-Protocol: Model Context Protocol (MCP)
-Integration: GitHub Copilot Chat, can be minimally reworked for MCP-compatible AI agents
+- Language: Go 1.23+
+- Framework: Gin
+- Protocol: Model Context Protocol (MCP)
+- Integration: GitHub Copilot Chat
 
 ## Companion Project
 https://github.com/nicholasraynes/northwind-api
