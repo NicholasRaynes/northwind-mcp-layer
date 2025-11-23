@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "northwind": {
+      "type": "stdio",
+      "command": "go",
+      "args": ["run", "./cmd/mcp"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NORTHWIND_API": "https://nr-northwind-mcp-fhauhhduczeea6ft.canadacentral-01.azurewebsites.net"
+      }
+    }
+  },
+  "inputs": []
+}
