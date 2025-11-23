@@ -10,7 +10,8 @@ northwind-mcp-layer/
 ├── internal/
 │   └── mcp/               # Core MCP logic (request handling, tool routing)
 ├── go.mod / go.sum        # Go module dependencies
-├── .copilot/              # MCP server configuration for Github Copilot (auto-loads server, tools, and API base)
+├── .vscode/
+│   └── mcp.json           # MCP server configuration for Github Copilot (auto-loads server, tools, and API base)
 └── README.md              # Project documentation
 ```
 
