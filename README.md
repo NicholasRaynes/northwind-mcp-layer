@@ -14,7 +14,7 @@ northwind-mcp-layer/
 └── README.md              # Project documentation
 ```
 
-## Architecture Overview
+## Example Tools
 | Tool Name                  | Description                                    | Example Parameters                              |
 | -------------------------- | ---------------------------------------------- | ----------------------------------------------- |
 | `get_customers`            | Retrieve customers from the Northwind API      | `country=Germany`, `city=London`                |
