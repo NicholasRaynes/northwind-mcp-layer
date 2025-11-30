@@ -11,7 +11,7 @@ type MCPTool struct {
 	Description string     `json:"description"`
 	Endpoint    string     `json:"endpoint"`
 	Method      string     `json:"method"`
-	Params      []MCPParam `json:"params,omitempty"`
+	Params      []MCPParam `json:"params"`
 }
 
 // Returns the list of available MCP tools based on northwind-api endpoints.
