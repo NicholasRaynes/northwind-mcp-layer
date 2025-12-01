@@ -25,6 +25,12 @@ northwind-mcp-layer/
 
 Each MCP tool corresponds to a live endpoint on the `northwind-api` and is dynamically available to Github Copilot via the MCP protocol.
 
+## Example Prompts
+`Provide some details on our customers from Germany`
+`What are our shipping costs for the year 1997?`
+`what's the inventory status of our products that need to be reordered?`
+`What's the supplier performance of Pavlova, Ltd.?`
+
 ## Tech Stack
 - Language: Go 1.23+
 - Framework: Gin
