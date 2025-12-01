@@ -6,6 +6,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 )
 
 // Builds a full API request URL with query parameters (if any)
@@ -22,7 +23,12 @@ func BuildRequestURL(baseURL, endpoint string, params map[string]any) string {
 			queryString += "&"
 		}
 		firstParam = false
-		queryString += fmt.Sprintf("%s=%v", paramName, paramValue)
+
+		queryString += fmt.Sprintf(
+			"%s=%s",
+			url.QueryEscape(paramName),
+			url.QueryEscape(fmt.Sprintf("%v", paramValue)),
+		)
 	}
 	return requestURL + queryString
 }
