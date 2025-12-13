@@ -1,6 +1,26 @@
 # 🧠 northwind-mcp-layer
-A lightweight Go-based Model Context Protocol (MCP) server that bridges GitHub Copilot Chat with the live `northwind-api`.
+A lightweight Go-based Model Context Protocol (MCP) server, designed to run locally in VS Code, that bridges GitHub Copilot Chat with the live `northwind-api`. 
 It exposes all of the Northwind business endpoints as structured MCP tools, enabling natural-language querying of real-time data.
+
+## Usage
+1. **Open in VS Code**  
+   Open the `northwind-mcp-layer` project in VS Code.
+
+2. **Start the local MCP server**  
+   Launch the MCP server using the configuration in `.vscode/mcp.json`.  
+   This automatically starts the Gin HTTP server and exposes the MCP tools.
+
+3. **Configure GitHub Copilot Chat**  
+   In GitHub Copilot Chat, load the MCP tools by pointing to the local server defined in `mcp.json`.
+
+4. **Query Northwind data**  
+   Use natural-language prompts in Copilot Chat to interact with live Northwind endpoints, for example:  
+   - `Provide details on customers from Germany.`  
+   - `What's the inventory status of products that need reordering?`
+
+## Notes
+- The `northwind-api` backend is hosted as a free-tier Render web service. It may take a few seconds to start up when initially accessed.
+- In my experience, Claude models tend to work best when interacting with this MCP layer.
 
 ## Architecture Overview
 ```text
