@@ -6,7 +6,7 @@
       "args": ["run", "./cmd/mcp"],
       "cwd": "${workspaceFolder}",
       "env": {
-        "NORTHWIND_API": "https://nr-northwind-mcp-fhauhhduczeea6ft.canadacentral-01.azurewebsites.net"
+        "NORTHWIND_API": "https://northwind-api-cp76.onrender.com"
       }
     }
   },
